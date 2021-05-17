@@ -1,0 +1,242 @@
+body {
+    background: #101010;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav */
+
+.navlist {
+    background: #202020;
+    padding: 1.8rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+}
+.navlist li {
+    display: inline;
+    font-size: 1.4rem;
+}
+.navlist a {
+    color: white;
+    text-decoration: none;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.navlist a:hover {
+    color: red;
+}
+.searchbox {
+    border: 1px solid black;
+    margin: 0 1rem;
+    width: 170px;
+    height: 30px;
+    padding: .8rem;
+}
+
+/* Main sections */
+
+.two {
+    word-break: normal;
+    padding-left: 1rem;
+    line-height: 1.4;
+}
+.pastpics {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 3rem;
+}
+.pics {
+    max-width: 100%;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+hr {
+    border-color: #202020;
+    margin: 2rem 0;
+}
+/* Sub of main - Left grid */
+
+.leftgrid {
+    margin-top: 2.5rem;
+    padding-left: 1rem;
+    padding-bottom: 2.5rem;
+}
+.left {
+    position: relative;
+    width: 600px;
+    height: 500px;
+}
+.imgbut {
+    border: 4px solid orangered;
+    color: white;
+    text-decoration: none;
+    background: orangered;
+    padding: .8rem;
+    text-transform: uppercase;
+}
+.first {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgbut:hover {
+    background: #202020;
+    color: orangered;
+}
+.boardpic {
+    width: 600px;
+    height: 500px;
+}
+.grid {
+    display: flex;
+    justify-content: space-between;
+}
+.groupboardf {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+}
+.leftboards {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    display: block;
+}
+.topleft,
+.bottomleft {
+    width: 300px;
+}
+.bottomright, .topright {
+    width: 255px;
+}
+.leftlink {
+    color: white;
+    text-decoration: none;
+}
+.leftlink:hover {
+    color: orange;
+    text-decoration: underline;
+}
+.price {
+    color: orangered;
+}
+
+/* Sub of main - Right of grid */
+
+.rightgrid {
+    margin-top: 2.5rem;
+    padding-left: 1rem;
+    padding-bottom: 2.5rem;
+}
+.right {
+    position: relative;
+    width: 600px;
+    height: 500px;
+}
+.second {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    text-align: center;
+}
+.groupboards {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+}
+.rightboards {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    display: block;
+}
+.rightlink {
+    color: white;
+    text-decoration: none;
+}
+.rightlink:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Connections */
+
+.insta-contain {
+    background: orangered;
+    padding: 1.1rem;
+    text-align: center;
+    width: 97.5%;
+}
+.instalink {
+    color: white;
+    text-decoration: none;
+}
+.imagegrid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto;
+    grid-gap: 25px;
+}
+.imgrid {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    background: transparent;
+}
+.shipping-contain {
+    background: #242424;
+    padding: .1rem;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background: orangered;
+}
+.footer-contain {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-contain h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.footer-contain ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-contain li {
+    margin-top: 1.1rem;
+    font-size: 1.1rem;
+}
+.footer-contain a {
+    color: white;
+    text-decoration: none;
+}
+.footer-contain a:hover {
+    text-decoration: underline;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+.fab {
+    color: white;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
